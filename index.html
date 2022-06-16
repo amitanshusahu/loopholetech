@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">loophole tech</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- //modals -->
+    <div class="menu flex-center" id="modal">
+        <div class="mobMenuHolder">
+            <div class="cancel" onclick="closeMenu()"><b>X</b></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./html/builds/build.html">Builds</a></li>
+                <li><a href="./html/contact.html">contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cart">
+        <span><b id="cartItem"></b></span>
+        <img class="cart" src="./img/icons/cart-big.png" alt="cart">
+    </div>
+    <!-- navigation -->
+    <nav class="flex-between">
+
+        <div class="logoHolder">
+                <img src="./img/logo.png" alt="logo">
+                <span><h3>Loophole <span style="color:red;">Tech</span></h3></span>
+        </div>
+
+        <div class="menuHolder">
+            <!-- in desktop -->
+            <ul class="nav-ul comp">
+                <li>Home</li>
+                <li>blog</li>
+                <li>builds</li>
+                <li>contact</li>
+            </ul>
+            <!-- in mobile -->
+            <span class="nav-ul mob" onclick="openMenu()">
+                <li>
+                    <img src="./img/icons/menu.png" alt="menu">
+                </li>
+            </span>
+        </div>
+    </nav>
+    <!-- end navigation -->
+
+    <header>
+        <div class="slideShow">
+            <div class="slide">
+                <a href=""><img src="./img/banner/headbanner4.jpg" alt="banner"></a>
+            </div>
+            <div class="slide">
+                <a href=""><img src="./img/banner/headbanner2.jpg" alt="banner"></a>
+            </div>
+            <div class="slide">
+                <a href=""><img src="./img/banner/headbanner3.jpg" alt="banner"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="contentHolder">
+            <div class="content">
+                <div class="pcBuilds">
+                    <!-- heading -->
+                    <div class="details">
+                        <h1>Pre Builds</h1>
+                        <button><a href="./html/builds/build.html">See All</a></button>
+                    </div>
+                    <div class="cardHolder scroll">
+
+                        <!-- card  -->
+                        <div class="cardL flex-center">
+                            <!-- square image only -->
+                            <a href=""><img src="./img/pcBuild.png" alt="pcBuild"></a>
+                            <div class="pcDetails">
+                                <h3>Gameing</h3>
+                                <p>this is the perfect pc for gameing <br>
+                                    ryzen 5 5600x, gtx 1660ti, 1Tb ssd</p>
+                            </div>
+                        </div>
+                        <!-- card  -->
+                        <div class="cardL flex-center">
+                            <!-- square image only -->
+                            <a href=""><img src="./img/pcBuild.png" alt="pcBuild"></a>
+                            <div class="pcDetails">
+                                <h3>Design</h3>
+                                <p>this is the perfect pc for gameing</p>
+                            </div>
+                        </div>
+                        <!-- card  -->
+                        <div class="cardL flex-center">
+                            <!-- square image only -->
+                            <a href=""><img src="./img/pcBuild.png" alt="pcBuild"></a>
+                            <div class="pcDetails">
+                                <h3>Workstation</h3>
+                                <p>this is the perfect pc for gameing</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="customQuotation">
+                    <div class="quotationDtl">
+                        <h1>Custome Quotations</h1>
+                        <p>This is also available!!</p>
+                        <button> Go -> </button>
+                    </div>
+                    <img src="./img/pcBuild.png" alt="">
+                </div>
+
+            </div>
+
+            <aside class="scroll">
+                <div class="sec">
+                    <img src="./img/key.png" alt="">
+                    <div class="dtl">
+                        <h1>Microsoft keys at this price!!</h1>
+                        <p>get your's now , and os for you new computer</p>
+                        <button>Get</button>
+                    </div>
+                </div>
+
+                <!-- only for computer -->
+                <div class="asideSec">
+                    <div class="compSec">
+                       
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+        <div class="blogHolder">
+            <div class="blogDtl flex-between">
+                <h1>Blog Posts</h1>
+                <button>See All</button>
+            </div>
+            <div class="bolgScroll scroll">
+                <!-- posts  -->
+                <div class="post">
+                    <a href="">
+                        <h3>Should you buy this graphics card?</h3>
+                    <p> a new graphics card has been launched and it seems that it is quiet expensive, so we.... 
+                        <span class="bolgPostMannage"></span>
+                        <a class="link" href="">Read more</a>
+                    </p>
+                    </a>
+                </div>
+                <!-- posts  -->
+                <div class="post">
+                    <a href="">
+                        <h3>Should you buy this graphics card?</h3>
+                    <p> a new graphics card has been launched and it seems that it is quiet expensive, so we.... 
+                        <span class="bolgPostMannage"></span>
+                        <a class="link" href="">Read more</a>
+                    </p>
+                    </a>
+                </div>
+                <!-- posts  -->
+                <div class="post">
+                    <a href="">
+                        <h3>Should you buy this graphics card?</h3>
+                    <p> a new graphics card has been launched and it seems that it is quiet expensive, so we.... 
+                        <span class="bolgPostMannage"></span>
+                        <a class="link" href="">Read more</a>
+                    </p>
+                    </a>
+                </div>
+                <!-- posts  -->
+                <div class="post">
+                    <a href="">
+                        <h3>Should you buy this graphics card?</h3>
+                    <p> a new graphics card has been launched and it seems that it is quiet expensive, so we.... 
+                        <span class="bolgPostMannage"></span>
+                        <a class="link" href="">Read more</a>
+                    </p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <i>youtube</i>
+            <i>instagram</i>
+            <i>facebook</i>
+            <i>telegram</i>
+        </div>
+        <div class="footHolder"></div>
+    </footer>
+
+    <!-- **credits**
+     "developer: Amitanshu Sahu
+     @amitanshu_sahu - instagram"
+    -->
+    <div class="credits">
+        <i>copyright 2022 developer : <a class="link" href="">@amitanshu_sahu</a></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

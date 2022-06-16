@@ -1,0 +1,76 @@
+.mobMenuHolder{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.897);
+    width: 60vw;
+    height: 70vh;
+    color: black;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+.mobMenuHolder .cancel{
+    width: 100%;
+    text-align: right;
+}
+.mobMenuHolder ul{
+    width: 100%;
+}
+.mobMenuHolder ul li{
+    list-style: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+.mobMenuHolder ul li:hover{
+    background-color: rgba(0, 0, 0, 0.182);
+}
+.mobMenuHolder ul li a{
+    font-weight: bold;
+}
+.cancel b{
+    padding: 5px;
+    cursor: pointer;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.602);
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    z-index: 100;
+}
+nav .comp{
+    display: none;
+}
+nav .mob img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+nav .logoHolder {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoHolder img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+nav ul li{
+    padding: 10px;
+}
+nav ul li:hover {
+    color: aqua;
+}
+
+/* media quries */
+@media all and (min-width: 700px) {
+    nav .comp{
+        display: inline-block;
+    }
+    nav .mob{
+        display: none;
+    }
+}

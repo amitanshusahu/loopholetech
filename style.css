@@ -1,0 +1,233 @@
+@import url("./utils.css");
+@import url("./components.css");
+body {
+    overflow-x: hidden;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23690000' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23690000'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    color: white;
+}
+header {
+    width: 100vw;
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+header .slideShow {
+    overflow: hidden;
+    width: 100vw;
+}
+
+header .slideShow::-webkit-scrollbar {
+    width: 0;
+}
+
+header .slideShow .slide {
+    width: 100vw;
+    display: none;
+}
+header .slideShow .slide img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    border-radius: 5px;
+    background-color: rgba(158, 158, 158, 0.074);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    margin: 20px;
+    overflow: hidden;
+}
+
+main .contentHolder {
+    display: flex;
+    flex-direction: column;
+}
+
+main .contentHolder .content {
+    width: 100vw;
+    overflow: hidden;
+}
+
+main .contentHolder .content .cardHolder {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 20px;
+    display: flex;
+}
+
+main .contentHolder .content .cardHolder .cardL {
+    /* border: 2px solid rgba(24, 24, 24, 0.691); */
+    background-color: rgba(0, 0, 0, 0.448);
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 20px;
+    scroll-snap-align: start;
+    transition: 0.3s;
+}
+.cardL button {
+    margin: 20px;
+}
+
+.cardL .pcDetails {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.details h1,
+.details button {
+    margin: 20px;
+}
+
+.cardL img {
+    height: 300px;
+    width: 300px;
+}
+.customQuotation{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.customQuotation div{
+    text-align: right;
+}
+.customQuotation div button{
+    margin-top: 10px;
+}
+.customQuotation img{
+    height: 200px;
+    width: 200px;
+}
+aside .sec{
+    display: flex;
+    margin: 20px;
+    transition: 0.3s;
+}
+aside .sec img{
+    height: 200px;
+    width: 200px;
+}
+aside .sec .dtl{
+    margin-left: 10px;
+}
+aside .sec .dtl button{
+    margin-top: 10px;
+}
+.asideSec{
+    display: none !important;
+}
+.blogHolder{
+    margin-top: 20px;
+}
+.blogHolder .blogDtl{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.blogHolder .bolgScroll{
+    overflow-x: scroll;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+.post{
+    background-color: rgba(255, 255, 255, 0.092);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 7px black;
+    width: 300px;
+    height: 150px;
+    min-width: 300px;
+    margin-left: 20px;
+    scroll-snap-align: start;
+}
+.post h3{
+    margin-bottom: 10px;
+}
+footer{
+    margin: 20px;
+}
+footer .social{
+    width: 100%;
+    text-align: center;
+}
+/* media quries */
+@media all and (min-width: 700px) {
+    main {
+        background-color: transparent;
+    }
+
+    main .contentHolder {
+        flex-direction: row;
+    }
+
+    .content {
+        width: 70vw;
+    }
+
+    main .contentHolder .content,
+    aside , .blogHolder{
+        box-shadow: inset 0 0 2px black, 0 0 2px rgba(255, 255, 255, 0.527);
+        border-radius: 5px;
+        background-color: rgba(158, 158, 158, 0.116);
+    }
+    .cardL:hover {
+        /* transform: scale(1.1); */
+        transform: translateY(-10px);
+        background: linear-gradient(3deg, rgba(255, 0, 0, 1) 0%, rgba(14, 255, 0, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        animation: rotate 1.5s linear infinite;
+    }
+    
+    @keyframes rotate {
+        0% {
+            filter: hue-rotate(0deg);
+        }
+    
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
+    .details {
+        width: 72vw;
+    }
+
+    aside {
+        margin-left: 20px;
+        max-width: 30vw;
+        overflow-y: auto;
+    }
+    .sec{
+        flex-direction: column;
+    }
+    .sec:hover{
+        transform: scale(1.05);
+    }
+    .asideSec{
+        display: block !important;
+        margin: 20px;
+    }
+    .asideSec .compSec{
+        margin-top: 20px;
+    }
+    .blogHolder{
+        padding: 20px;
+    }
+    .post{
+        min-width: 500px;
+        margin-left: 20px;
+        transition: 0.2;
+    }
+    .post:hover{
+        transform: translateY(-5px);
+    }
+}

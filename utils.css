@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* utils */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+button{
+    padding: 10px;
+    background-color: red;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight:bolder;
+}
+button:hover{
+    background-color: transparent;
+    transform: scale(1.08);
+    color: red;
+}
+button:focus{
+    border: 2px solid rgb(0, 174, 255);
+    color: rgb(0, 251, 255);
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.link{
+    color: rgb(0, 174, 255);
+    text-decoration: dashed !important;
+}
+#modal {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.594) 0%, rgba(42, 42, 42, 0) 90%);
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s ease-in-out;
+}
+.glass{
+    /* border: 1px solid rgba(255, 255, 255, 0.15); */
+    box-shadow: inset 0 0 2px black , 0 0 2px rgba(255, 255, 255, 0.527);
+    border-radius: 5px;
+    background-color: rgba(158, 158, 158, 0.116);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+.scroll::-webkit-scrollbar-track{
+    color: transparent;
+}
+.scroll::-webkit-scrollbar{
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.203);
+    border-radius: 5px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.372);
+}
+.scroll-h::-webkit-scrollbar-track{
+    color: transparent;
+}
+.scroll-h::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0.203);
+    border-radius: 5px;
+}
+.scroll-h::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    width: 5px;
+    background-color: rgba(255, 255, 255, 0.372);
+}
+.cart{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    z-index: 900;
+    overflow: hidden;
+}
+.cart span{
+    width: 50px;
+    text-align: right;
+}
+.cart span b{
+    color: red;
+    position: absolute;
+    z-index: 9001;
+    border-radius: 5px;
+    right: 15px;
+    margin-top: -10px;
+}
+.tab{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(47, 47, 47, 0.861);
+}
+.tab button{
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+.tab button:hover{
+    transform: scale(1);
+    background-color: transparent;
+    color: white;
+}
+.tab button:focus{
+    margin: 0;
+    border-radius: 0;
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+.tab .active{
+    margin: 0;
+    border-radius: 0;
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+.credits{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.189);
+}
+.credits i {
+    margin: 20px;
+}
+/* media quries */
+@media all and (min-width: 700px) {
+    .jiggle:hover{
+        background: linear-gradient(3deg, rgba(255, 0, 0, 1) 0%, rgba(14, 255, 0, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        animation: rotate 1.5s linear infinite;
+    }
+    @keyframes rotate {
+        0% {
+            filter: hue-rotate(0deg);
+        }
+    
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
+}
