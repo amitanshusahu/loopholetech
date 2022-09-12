@@ -1,3 +1,4 @@
 # loopholetech
 the professnal website of loophole tech
-# visit :- amitanshusahu.github.io/loopholetech
+# visit :- 
+https://amitanshusahu.github.io/loopholetech
